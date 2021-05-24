@@ -1,0 +1,20 @@
+{
+  "name": "cryptorank",
+  "version": "1.0.0",
+  "description": "CLI for Cryptos",
+  "main": "index.js",
+  "bin": "./bin/cryptoRank.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bipul",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "colors": "^1.4.0",
+    "commander": "^7.2.0",
+    "configstore": "^6.0.0",
+    "inquirer": "^8.1.0"
+  }
+}
