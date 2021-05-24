@@ -1,11 +1,9 @@
-// import program from 'commander'
-// import key from '../command/key.js'
+
 import program from 'commander'
-// import key from '../command/key.js'
-// const key= require('../command/key')
+
 import inquirer from "inquirer"
 import colors from 'colors'
-// import KeyManager from "../library/KeyManager.js"
+
 import Configstore from 'configstore'
 
 const  config= new Configstore('cryptorank')
@@ -15,7 +13,7 @@ program
     .description('SET API Keys --https://nomics.com')
     .action(async() => {
         const isRequired = e => e === '' ? 'This value is required' : true
-        // const KeyManager= new KeyManager()
+    
         const input= await inquirer.prompt({
             type: 'input',
             name: 'key',
